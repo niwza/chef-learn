@@ -16,7 +16,7 @@ end
 
 Vagrant.configure(2) do |config|
   
-  config.vm.define :chef_server do |server|
+  config.vm.define "chef-server" do |server|
       server.vm.box = "ubuntu/xenial64"
       server.vm.hostname = "chef-server"
       server.vm.network :private_network, ip: "10.0.15.10"
